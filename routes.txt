@@ -8,8 +8,9 @@
                                          PATCH  /articles/:id(.:format)                                                                           articles#update
                                          PUT    /articles/:id(.:format)                                                                           articles#update
                                          DELETE /articles/:id(.:format)                                                                           articles#destroy
-                            new_contacts GET    /contacts/new(.:format)                                                                           contacts#new
-                                contacts POST   /contacts(.:format)                                                                               contacts#create
+                                contacts GET    /contacts(.:format)                                                                               contacts#index
+                                         POST   /contacts(.:format)                                                                               contacts#create
+                             new_contact GET    /contacts/new(.:format)                                                                           contacts#new
         turbo_recede_historical_location GET    /recede_historical_location(.:format)                                                             turbo/native/navigation#recede
         turbo_resume_historical_location GET    /resume_historical_location(.:format)                                                             turbo/native/navigation#resume
        turbo_refresh_historical_location GET    /refresh_historical_location(.:format)                                                            turbo/native/navigation#refresh

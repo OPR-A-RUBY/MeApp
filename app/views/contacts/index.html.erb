@@ -1,0 +1,9 @@
+<h3>Contacts List</h3>
+
+<ul>
+  <% @contacts.each do |contact| %>
+    <li>
+      <%= contact.email %>
+    </li>
+  <% end %>
+</ul>
