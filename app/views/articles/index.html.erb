@@ -1,0 +1,11 @@
+<h3>Articles List</h3>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+    	id = 
+    	<%= article.id %> - 
+      <%= article.title %>
+    </li>
+  <% end %>
+</ul>
